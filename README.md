@@ -7,7 +7,7 @@
 1. 打开 Chrome 或 Edge 的扩展管理页。
 2. 开启“开发者模式”。
 3. 选择“加载已解压的扩展”。
-4. 选择本目录：`C:\code\baidu-ad-filter`。
+4. 选择本目录：`~\baidu-ad-filter`。
 
 ## 使用
 
