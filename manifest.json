@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Baidu Ad Result Filter",
+  "version": "1.0.0",
+  "description": "Hide Baidu search results that are marked with ad or promotion labels.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://www.baidu.com/*",
+    "*://m.baidu.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.baidu.com/s*",
+        "*://m.baidu.com/s*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Baidu Ad Filter",
+    "default_popup": "popup.html"
+  }
+}
